@@ -1,8 +1,8 @@
 # www
 www
 
-<pre><code>
 docker-compose.yml
+<pre><code>
 version: '3'
 services:
   www:
