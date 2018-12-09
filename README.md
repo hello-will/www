@@ -21,3 +21,13 @@ services:
     environment:
       - DOMAIN_NAME=example.com
 </code><pre>
+
+创建wm8afterlogic用户和数据库：
+<pre><code>
+  docker-compose exec mail mysql
+    insert into mysql.user(Host,User,Password) values('localhost','wm8afterlogic',password('wm8afterlogic'));
+    create database wm8afterlogic;
+    grant all privileges on wm8afterlogic.* to wm8afterlogic@localhost identified by 'wm8afterlogic';
+    flush privileges;
+    exit
+</code></pre>
