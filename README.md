@@ -20,7 +20,7 @@ services:
       - ./html:/var/www/html
     environment:
       - DOMAIN_NAME=example.com
-</code><pre>
+</code></pre>
 
 创建wm8afterlogic用户和数据库：
 <pre><code>
