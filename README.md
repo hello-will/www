@@ -1,6 +1,7 @@
 # www
 www
 
+<pre><code>
 docker-compose.yml
 version: '3'
 services:
@@ -19,3 +20,4 @@ services:
       - ./html:/var/www/html
     environment:
       - DOMAIN_NAME=example.com
+</code><pre>
