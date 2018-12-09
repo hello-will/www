@@ -10,7 +10,6 @@ RUN set -x \
     && mkdir -p /etc/nginx/certs
 COPY nginx.conf /etc/nginx/
 COPY default    /etc/nginx/sites-available/
-VOLUME ["/var/lib/mysql", "/var/www/html"]
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
