@@ -1,5 +1,6 @@
 # www
-www
+www - lnmp基础镜像
+保护nginx、mariadb、php
 
 docker-compose.yml
 <pre><code>
